@@ -1,0 +1,125 @@
+STEPS
+
+"C:\Users\steph\OneDrive - spdeveloper.com.au\SP Dev Group\App - PowerApp - SQL DB - VS Code - DevOps - Site"
+
+Installed Node.js in C:\Program Files
+Created Folder for the App on Laptop
+Open Terminal and set location as above
+
+DevOps / Artifacts / npm
+
+TERMINAL
+================================================
+TERMINAL RESULT FOR NODE / NPM
+Microsoft Windows [Version 10.0.26200.7019]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\steph>node -v
+v24.11.0
+
+C:\Users\steph>npm -v
+11.6.1
+
+C:\Users\steph>
+===============================================
+
+STEP
+
+ "Create package.json & package-lock.json
+On PC navigate to the FOLDER
+
+open TERMINAL
+
+npm init -y
+npm install mssql
+
+===============================================
+
+STEP
+
+"Create a GitHub Repo" - to send the PC folder and files to
+
+===============================================
+
+STEP
+"Add 1st file to GitHub Repo from PC"
+
+===============================================
+
+STEP
+
+"Open VS Code and the PC Folder
+
+================================================
+
+STEP
+
+"Connect to"
+"Connect to remote repository"
+"Connect to GitHub"
+
+
+
+
+
+===============================================
+===============================================
+
+STEP "More Terminal Commands"
+
+NPM INSTALL
+
+===============================================
+STEP - ERROR
+NPM PUBLISH
+
+--error NPM PUBLISH FAILED
+C:\Users\steph\OneDrive - spdeveloper.com.au\SP Dev Group\App - PowerApp - SQL DB - VS Code - DevOps - Site>npm publish
+npm notice
+npm notice package: app---powerapp---sql-db---vs-code---devops---site@1.0.0
+npm notice Tarball Contents
+npm notice 757B STEPS.txt
+npm notice 333B package.json
+npm notice Tarball Details
+npm notice name: app---powerapp---sql-db---vs-code---devops---site
+npm notice version: 1.0.0
+npm notice filename: app---powerapp---sql-db---vs-code---devops---site-1.0.0.tgz
+npm notice package size: 695 B
+npm notice unpacked size: 1.1 kB
+npm notice shasum: d094fad3161ff72f28a6290befbbb901e40f3ecd
+npm notice integrity: sha512-115PKdc2V7vm1[...]XbKLNBpRwQk7A==
+npm notice total files: 2
+npm notice
+npm error code ENEEDAUTH
+npm error need auth This command requires you to be logged in to https://registry.npmjs.org/
+npm error need auth You need to authorize this machine using `npm adduser`
+npm error A complete log of this run can be found in: C:\Users\steph\AppData\Local\npm-cache\_logs\2025-10-31T00_28_57_900Z-debug-0.log
+
+============================================
+STEP 
+AZURE DEVOPS ARTIFACTS STEP
+
+"Add a .npmrc to your project, in the same directory as your package.json"
+npm install -g vsts-npm-auth --registry https://registry.npmjs.com --always-auth false
+
+WARNING: This will stop working with next NPM major release
+
+============================================
+STEP
+AZURE DEVOPS ARTIFACTS STEP
+
+"Then, run vsts-npm-auth to get an Azure Artifacts token added to your user-level .npmrc file"
+vsts-npm-auth -config .npmrc
+
+***Terminal Response
+C:\Users\steph\OneDrive - spdeveloper.com.au\SP Dev Group\App - PowerApp - SQL DB - VS Code - DevOps - Site>vsts-npm-auth -config .npmrc
+
+vsts-npm-auth v0.43.0.0
+-----------------------
+Config file not found. File name: '.npmrc'
+
+
+===============================================
+
+DevOps / Artifacts / npm
+
